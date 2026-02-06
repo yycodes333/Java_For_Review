@@ -15,10 +15,10 @@
     window.docsify = {
       name: 'Java 复习大纲', // 侧边栏顶部的标题
       
-      // 修正：这里必须是纯 URL 字符串，不能有 markdown 符号
-      repo: '[https://github.com/yycodes333/Java_For_Review](https://github.com/yycodes333/Java_For_Review)', 
+      // 【重点修正】这里必须是纯链接，不要加 [] 或 ()
+      repo: 'https://github.com/yycodes333/Java_For_Review', 
       
-      // 开启侧边栏配置 (必须为 true 才能读取 _sidebar.md)
+      // 开启侧边栏配置
       loadSidebar: true,
       
       // 自动为标题生成目录
@@ -53,7 +53,7 @@
   <!-- 引入代码复制插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   
-  <!-- 引入字数统计插件 (修正：纯链接) -->
+  <!-- 【重点修正】引入字数统计插件 (去掉了多余的符号) -->
   <script src="//[unpkg.com/docsify-count/dist/countable.min.js](https://unpkg.com/docsify-count/dist/countable.min.js)"></script>
 </body>
 </html>
