@@ -14,15 +14,12 @@
   <script>
     window.docsify = {
       name: 'Java 复习大纲', // 侧边栏顶部的标题
-      // 你的 GitHub 仓库地址
+      
+      // 修正：这里必须是纯 URL 字符串，不能有 markdown 符号
       repo: '[https://github.com/yycodes333/Java_For_Review](https://github.com/yycodes333/Java_For_Review)', 
       
-      // 开启侧边栏配置
+      // 开启侧边栏配置 (必须为 true 才能读取 _sidebar.md)
       loadSidebar: true,
-      // 开启封面页
-      coverpage: false,
-      // 开启导航栏
-      loadNavbar: false,
       
       // 自动为标题生成目录
       subMaxLevel: 3,
@@ -46,13 +43,17 @@
   </script>
   <!-- 引入 docsify 核心 JS -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  
   <!-- 引入搜索插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
   <!-- 引入图片缩放插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  
   <!-- 引入代码复制插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-  <!-- 引入字数统计插件 -->
+  
+  <!-- 引入字数统计插件 (修正：纯链接) -->
   <script src="//[unpkg.com/docsify-count/dist/countable.min.js](https://unpkg.com/docsify-count/dist/countable.min.js)"></script>
 </body>
 </html>
