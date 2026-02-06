@@ -1,9 +1,3 @@
-### 9.4 线程池与并发常用工具（Callable/Future / volatile / Atomic）
-
-
-
-
-
 ​		禁止直接 `new Thread()`，应使用线程池管理资源。
 
 - **线程池（ExecutorService）**：统一管理线程、复用线程、避免频繁创建销毁  

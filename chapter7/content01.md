@@ -1,5 +1,3 @@
-### 7.1 API
-
 
 
 **InputStream**

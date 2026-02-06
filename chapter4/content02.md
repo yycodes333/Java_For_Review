@@ -1,5 +1,3 @@
-### 4.2 StringBuffer & StringBuilder
-
 ​	可变字符串
 
 Buffer线程安全 (synchronized)，效率低

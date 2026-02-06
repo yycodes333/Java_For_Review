@@ -1,7 +1,3 @@
-### 2.1 四个访问权限
-
-
-
 ```java
 public class ArrayDemo {
     public static void main(String[] args) {

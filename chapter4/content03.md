@@ -1,4 +1,4 @@
-### 4.3 System Runtime Math Random
+
 
 ​	数学与随机数
 
