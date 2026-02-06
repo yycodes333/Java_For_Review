@@ -14,15 +14,25 @@
       name: 'Java复习大纲',
       repo: 'https://github.com/yycodes333/Java-Review-Outline',
       
-      // 🔴 关键修改：改回 true，让它自动去找 _sidebar.md
-      loadSidebar: true,
+      // 🔴 核心修改：指定新文件名 menu.md
+      // 加上时间戳 ?t=... 强迫浏览器每次都读新的，防止缓存
+      loadSidebar: 'menu.md?t=' + new Date().getTime(),
       
       subMaxLevel: 3,
-      auto2top: true
+      auto2top: true,
+      
+      // 搜索配置
+      search: {
+        placeholder: '搜索',
+        noData: '找不到结果!',
+        depth: 6
+      }
     }
   </script>
+  
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
 </body>
