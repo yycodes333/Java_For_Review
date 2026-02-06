@@ -13,18 +13,14 @@
   <div id="app">加载中...</div>
   <script>
     window.docsify = {
-      name: 'Java 复习大纲', // 侧边栏顶部的标题
-      
-      // 【重点修正】这里必须是纯链接，不要加 [] 或 ()
+      name: 'Java 复习大纲',
       repo: 'https://github.com/yycodes333/Java_For_Review', 
       
-      // 开启侧边栏配置
-      loadSidebar: true,
+      // 【关键修改 1】指定侧边栏文件名为 sidebar.md (无下划线)
+      loadSidebar: 'sidebar.md',
       
-      // 自动为标题生成目录
       subMaxLevel: 3,
       
-      // 搜索插件配置
       search: {
         paths: 'auto',
         placeholder: '🔍 搜索',
@@ -32,7 +28,6 @@
         depth: 6,
       },
       
-      // 字数统计
       count:{
         countable:true,
         fontsize:'0.9em',
@@ -41,19 +36,16 @@
       }
     }
   </script>
-  <!-- 引入 docsify 核心 JS -->
+  
+  <!-- 【关键顺序】必须先引入 docsify.min.js -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
   
-  <!-- 引入搜索插件 -->
+  <!-- 然后引入插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  
-  <!-- 引入图片缩放插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-  
-  <!-- 引入代码复制插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   
-  <!-- 【重点修正】引入字数统计插件 (去掉了多余的符号) -->
+  <!-- 【关键修改 2】修正了之前错误的 URL 写法 -->
   <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
 </body>
 </html>
